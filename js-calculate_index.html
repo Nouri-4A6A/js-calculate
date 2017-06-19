@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js-calculate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>calculate</h1>
+		numbers: <input type="text" name="nummers" id="getallen">
+		<br>
+		operation: <select id="keuze">
+			<option value="+">+</option>
+			<option value="*">*</option>
+			<option value="-">-</option>
+			<option value="/">/</option>
+		</select>
+		<br>
+		<input type="submit" name="calculate" onclick="optellen();">
+	<div class="resultaat">
+		<p id="result">result -</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
