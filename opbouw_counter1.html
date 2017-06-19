@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta http-equiv="Content-type"
+              content="text/html;
+              charset=UTF-8">
+      
+    </head>
+    <body>
+     <div id="div1">
+         
+     </div>   
+    </body>
+    <style>
+    
+        #div1{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <script>
+        function showOnce(){
+            console.log("show once");
+        }
+        setTimeout(showOnce, 3000);
+        
+        function showMore(){
+            console.log("show more...");
+        }
+        var interval = setInterval(showMore, 1000);
+         
+        //interval uitzetten
+        clearInterval(interval);
+        
+        var teller = 0;
+        function addUp(){
+            teller = teller + 1;
+            console.log(teller);
+        }
+        var intervall = setInterval(teller, 1000);
+        addUp(intervall);
+        addUp(intervall);
+        addUp(intervall);
+        addUp(intervall);
+        addUp(intervall);
+        
+        
+        var nummer = 1;
+        function counter(){
+            nummer = nummer + 1;
+            document.getElementById('div1').innerHTML = nummer;
+            
+            if (nummer = 100){
+                
+            }
+        }
+        var intervalll = setInterval(counter, 1000);
+        document.getElementById('div1').innerHTML = nummer;
+        counter(intervalll);
+        
+        
+        
+    
+    
+    </script>
+</html>
